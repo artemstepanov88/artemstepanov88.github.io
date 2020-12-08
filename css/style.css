@@ -1,0 +1,514 @@
+
+/*=================
+  =               =
+  =   Reset CSS   =
+  =               =
+  =================
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+/*	font-size: 100%;*/
+    font-size: 62.5%; /* mod */
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Box sizing */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+/*=================
+  =               =
+  =   Reset CSS   =
+  =               =
+ ==================
+*/
+
+.header{
+display: flex;
+}
+.Info{
+	z-index: 0;
+	top: 40%;
+	left: 4%;
+	right: 4%;
+	position: absolute;
+	background: linear-gradient(to right,cyan,green);
+	font-size: 2rem;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-family: Comic Sans MS;
+
+}
+#myCanvas{
+
+
+	z-index: 1;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    width: 640px;
+    height: 480px;
+
+
+}
+
+#c{
+
+	z-index: 0;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100vw;
+    height: 100vh;
+
+ 
+
+}
+.bg{
+max-width: 100vw;
+min-height: 99.7vh;
+position: relative;
+z-index: 0;
+}
+.header::after {
+	z-index: 2;
+    content: ""; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+	background: black;
+	opacity: .4;
+	mix-blend-mode: color;
+    mix-blend-mode: hue;
+    mix-blend-mode: hard-light;
+}
+.slider_wrap {
+	top:34%;
+
+	position: absolute;
+	overflow-x:hidden;
+	overflow-y:hidden;
+	z-index: 3;
+	display: flex;
+	}
+	.slider_wrap img {
+	z-index: 3;
+opacity: 0.9;
+  height: 50%;
+	width: 50%;
+	
+	}
+	
+	.slider_wrap span {
+top:50%;
+left: 80%;
+	width:100%;
+	height:100%;
+	display:flex;
+
+	position:absolute;
+	cursor:pointer;
+	z-index: 3;
+	}
+	
+.logo{
+position: absolute;
+top: 4%;
+left: 8%;
+z-index: 3;
+opacity: 0.3;
+height: 40%;
+width: 26%;
+}
+
+.logo_skills{
+	position: absolute;
+	top: 20%;
+	left: 35%;
+	z-index: 3;
+opacity: 0.5;
+	height: 30%;
+	width: 30%;
+	}
+	.logo_jquery{
+		position: absolute;
+		top: 30%;
+		left: 5%;
+		z-index: 3;
+	opacity: 1;
+		height: 20%;
+		width: 20%;
+		}
+	
+		.logo_git{
+			position: absolute;
+			top: 40%;
+			left: 70%;
+			z-index: 3;
+		opacity: 0.5;
+			height: 10%;
+			width: 8%;
+			}
+			.logo_bootstrap{
+
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				z-index: 3;
+			opacity: 0.7;
+				height: 20%;
+				width: 16%;
+				}
+				.logo_photoshop{
+
+					position: absolute;
+					top: 60%;
+					left: 10%;
+					z-index: 3;
+				opacity: 0.7;
+					height: 20%;
+					width: 14%;
+					}
+				
+.about_me{
+z-index: 0;
+top: 40%;
+left: 4%;
+right: 4%;
+position: absolute;
+background: linear-gradient(to right,cyan,green);
+font-size: 2rem;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-family: Comic Sans MS;
+}
+.menu{
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	text-decoration: none;
+}
+.a,.b,.c,.d,.g{
+	background: linear-gradient(to right, red, orange, yellow, green, cyan, blue, violet);
+	background-size: 400% 400%;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-animation: rainbow 5s ease infinite;
+	animation: rainbow 30s ease infinite;
+	font-size: 1.5rem;
+	line-height: 2.5rem;
+	margin: 2rem;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+@-webkit-keyframes rainbow {
+	0% { background-position: 0% 50% }
+	50% { background-position: 100% 50% }
+	100% { background-position: 0% 50% }
+  }
+@keyframes rainbow{
+
+		0% { background-position: 0% 50% }
+		50% { background-position: 100% 50% }
+		100% { background-position: 0% 50% }
+	  }
+.nav{
+display: flex;
+justify-content: space-between;
+align-items: flex-end;
+position: absolute;
+right:8%;
+top:10%;
+z-index: 3;
+}
+.name{
+position: absolute;
+top: 50%;
+left: 40%;
+background: linear-gradient(to right, cyan, blue, violet);
+background-size: 400% 400%;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-size: 50px;
+font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-weight: 100;
+}
+.name-info{
+
+	position: absolute;
+	top: 56%;
+	left: 40%;
+	background: linear-gradient(to right, cyan, blue, violet);
+	background-size: 400% 400%;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-size: 16px;
+	font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	font-weight: 50;
+}
+
+.a{
+	margin-left: -60%;
+}
+.a:hover{
+	font-size: 30px;
+	-webkit-text-fill-color: transparent;
+	background: linear-gradient(to right, cyan,green,yellow);
+	transition: all .3s linear;
+	-webkit-background-clip: text;
+	-webkit-transition: all .3s linear;
+	-moz-transition: all .3s linear; 
+}
+
+
+.b{
+	margin-left: -40%;
+}
+.b:hover{
+	font-size: 30px;
+	-webkit-text-fill-color: transparent;
+	background: linear-gradient(to right,yellow,green,cyan);
+	transition: all .3s linear;
+	-webkit-background-clip: text;
+	-webkit-transition: all .3s linear;
+	-moz-transition: all .3s linear; 
+}
+
+.c{
+	margin-left: 2%;
+}
+.c:hover{
+	font-size: 30px;
+	-webkit-text-fill-color: transparent;
+	background: linear-gradient(to right,orange,yellow,cyan);
+	transition: all .3s linear;
+	-webkit-background-clip: text;
+	-webkit-transition: all .3s linear;
+	-moz-transition: all .3s linear; 
+}
+
+.d{
+	margin-left: -100%;
+}
+
+.g{
+	margin-left: -150%;
+}
+
+
+@media screen and (max-width: 700px) {
+	.header {
+		display: flex;
+		flex-direction: column;
+	  position: absolute;
+	  flex-wrap: nowrap;
+overflow-x: hidden;
+	}
+.name{
+	position: absolute;
+	top: 60%;
+	left: 18%;
+	width: 100%;
+}
+.name-info{
+	position: absolute;
+	top: 66%;
+	left: 18%;
+	width: 100%;
+	align-items: center;
+	margin-top: 2%;
+}
+.logo {
+	position: absolute;
+	display: flex;
+width: 66%;
+height: 46%;
+left:20%;
+top:16%;
+}
+
+
+
+	@media screen and (max-width: 480px) {
+	.header {
+		display: flex;
+		flex-direction: column;
+	  position: absolute;
+	  flex-wrap: nowrap;
+overflow-x: hidden;
+	}
+.name{
+	position: absolute;
+	top: 60%;
+	left: 18%;
+
+	width: 100%;
+
+}
+
+.name-info{
+	position: absolute;
+	top: 66%;
+	left: 18%;
+
+	width: 100%;
+	align-items: center;
+	margin-top: 2%;
+
+}
+.logo {
+	position: absolute;
+	display: flex;
+width: 66%;
+height: 46%;
+left:20%;
+top:16%;
+
+}
+
+
+.about_me{
+
+	font-size: 0.5rem;
+	position: absolute;
+
+
+
+}
+.a{
+margin-left: 5%;
+	font-size: 1rem;
+	white-space: nowrap;
+
+}
+.b{
+	margin-left: 5%;
+	font-size: 1rem;
+}
+.c{
+
+	font-size: 1rem;
+}
+.d{
+	margin-left: -10%;
+	font-size: 1rem;
+	white-space: nowrap;
+}
+.g{
+	margin-left: -10%;
+	font-size: 1rem;
+	white-space: nowrap;
+}
+
+.nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	position: absolute;
+left:11%;
+	top:5%;
+	z-index: 3;
+	}
+
+}
+	
+.logo_skills{
+	position: absolute;
+	top: 30%;
+	left: 35%;
+	z-index: 3;
+opacity: 0.5;
+	height: 20%;
+	width: 34%;
+	}
+	.logo_jquery{
+		position: absolute;
+		top: 20%;
+		left: 5%;
+		z-index: 3;
+	opacity: 0.5;
+	height: 20%;
+	width: 40%;
+		}
+	
+		.logo_git{
+			position: absolute;
+			top: 40%;
+			left: 70%;
+			z-index: 3;
+		opacity: 0.5;
+		height: 20%;
+		width: 30%;
+			}
+			.logo_bootstrap{
+
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				z-index: 3;
+			opacity: 0.7;
+			height: 20%;
+			width: 30%;
+				}
+				.logo_photoshop{
+
+					position: absolute;
+					top: 60%;
+					left: 10%;
+					z-index: 3;
+				opacity: 0.7;
+					height: 20%;
+					width: 30%;
+					}
+					#c{
+
+						z-index: 0;
+						position: absolute;
+						top: 40%;
+						left: 30%;
+						width: 40vw;
+						height: 40vh;
+					
+					 
+					
+					}
+				}
