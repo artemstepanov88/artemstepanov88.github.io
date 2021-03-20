@@ -27,9 +27,9 @@
   const materials = [
     new THREE.MeshBasicMaterial({map: loader.load('img/1.jpg')}),
     new THREE.MeshBasicMaterial({map: loader.load('img/2.png')}),
-    new THREE.MeshBasicMaterial({map: loader.load('img/3.jpg')}),
+    new THREE.MeshBasicMaterial({map: loader.load('img/3.JPG')}),
     new THREE.MeshBasicMaterial({map: loader.load('img/4.jpg')}),
-    new THREE.MeshBasicMaterial({map: loader.load('img/5.jpg')}),
+    new THREE.MeshBasicMaterial({map: loader.load('img/5.JPG')}),
     new THREE.MeshBasicMaterial({map: loader.load('img/6.jpg')}),
   ];
   const cube = new THREE.Mesh(geometry, materials);
