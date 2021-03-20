@@ -25,12 +25,12 @@
   const loader = new THREE.TextureLoader();
 
   const materials = [
-    new THREE.MeshBasicMaterial({map: loader.load('https://u.kanobu.ru/longreads/2017/4/7/c71b3471-d130-496c-928f-1eb1288406c6.jpg')}),
-    new THREE.MeshBasicMaterial({map: loader.load('https://u.kanobu.ru/longreads/2017/4/7/c71b3471-d130-496c-928f-1eb1288406c6.jpg')}),
-    new THREE.MeshBasicMaterial({map: loader.load('https://u.kanobu.ru/longreads/2017/4/7/c71b3471-d130-496c-928f-1eb1288406c6.jpg')}),
-    new THREE.MeshBasicMaterial({map: loader.load('https://u.kanobu.ru/longreads/2017/4/7/c71b3471-d130-496c-928f-1eb1288406c6.jpg')}),
-    new THREE.MeshBasicMaterial({map: loader.load('https://u.kanobu.ru/longreads/2017/4/7/c71b3471-d130-496c-928f-1eb1288406c6.jpg')}),
-    new THREE.MeshBasicMaterial({map: loader.load('https://u.kanobu.ru/longreads/2017/4/7/c71b3471-d130-496c-928f-1eb1288406c6.jpg')}),
+    new THREE.MeshBasicMaterial({map: loader.load('img/1.jpg')}),
+    new THREE.MeshBasicMaterial({map: loader.load('img/2.png')}),
+    new THREE.MeshBasicMaterial({map: loader.load('img/3.jpg')}),
+    new THREE.MeshBasicMaterial({map: loader.load('img/4.jpg')}),
+    new THREE.MeshBasicMaterial({map: loader.load('img/5.jpg')}),
+    new THREE.MeshBasicMaterial({map: loader.load('img/6.jpg')}),
   ];
   const cube = new THREE.Mesh(geometry, materials);
   scene.add(cube);
