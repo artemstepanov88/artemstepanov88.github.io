@@ -493,3 +493,24 @@ opacity: 0.5;
 					
 					}
 				}
+.bg{
+   width: 50%;
+    height: 100%;
+position: absolute;
+background: url("../img/blue-forest 3.jpg") center no-repeat;
+z-index: 0;
+}
+.header::after {
+	z-index: 2;
+    content: ""; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+	background: black;
+	opacity: .4;
+	mix-blend-mode: color;
+    mix-blend-mode: hue;
+    mix-blend-mode: hard-light;
+}
