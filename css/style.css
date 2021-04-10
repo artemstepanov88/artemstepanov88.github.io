@@ -251,7 +251,7 @@ font-family: Comic Sans MS;
 top: 10%;
 left: 10%;
 position: absolute;
-background: linear-gradient(to right, green, red,yellow,blue,orange,cyan,violet);
+background: linear-gradient(to right, cyan, blue, violet);
 font-size: 2rem;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
@@ -368,4 +368,17 @@ font-weight: 100;
 .g{
 	margin-left: -150%;
 }
-
+@media screen and (min-width: 480px) {
+	.logo{
+	position: absolute;
+top: 40%;
+left: 30%;
+z-index: 3;
+opacity: 0.5;
+height: 40%;
+width: 26%;	
+	
+	}
+	
+}
+	
