@@ -369,14 +369,14 @@ font-weight: 100;
 	margin-left: -150%;
 }
 @media screen and (max-width: 480px) {
-	.logo{
+	.logo480px{
 	position: absolute;
-top: 40%;
-left: 30%;
+top: 30%;
+left: 40%;
 z-index: 3;
 opacity: 0.5;
 height: 50%;
-width: 40%;	
+width: 50%;	
 	}
 	
 	#myCanvas{
