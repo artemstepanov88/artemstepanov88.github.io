@@ -235,6 +235,17 @@ font-size: 2rem;
 -webkit-text-fill-color: transparent;
 font-family: Comic Sans MS;	
 }
+.skills-title{
+	z-index: 0;
+top: 10%;
+left: 10%;
+position: absolute;
+background: linear-gradient(to right, green, red,yellow,blue,orange,cyan,violet);
+font-size: 2rem;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-family: Comic Sans MS;	
+}
 .menu{
 	display: flex;
 	align-items: flex-end;
