@@ -368,7 +368,7 @@ font-weight: 100;
 .g{
 	margin-left: -150%;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
 	.logo{
 	position: absolute;
 top: 40%;
