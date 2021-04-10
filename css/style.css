@@ -368,20 +368,4 @@ font-weight: 100;
 .g{
 	margin-left: -150%;
 }
-@media (min-width: 576px) {
-
-
-.logo{
-position: absolute;
-top: 30%;
-left: 30%;
-z-index: 3;
-opacity: 0.5;
-height: 50%;
-width: 50%;
-}
-
-
-
-}
 
