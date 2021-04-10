@@ -378,7 +378,9 @@ opacity: 0.5;
 height: 6%;
 width: 6%;	
 	}
-	
+		.logo{
+	visibility:hidden;
+	}
 	#myCanvas{
 
 visibility:hidden;
