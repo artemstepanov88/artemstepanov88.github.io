@@ -65,18 +65,6 @@ table {
 display: flex;
 }
 
-.Info{
-	z-index: 0;
-	top: 40%;
-	left: 40%;
-	position: absolute;
-	background: linear-gradient(to right,cyan,green);
-	font-size: 2rem;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	font-family: Comic Sans MS;
-
-}
 #myCanvas{
 
 
@@ -222,6 +210,18 @@ font-size: 2rem;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 font-family: Comic Sans MS;
+}
+.game-title{
+	z-index: 0;
+	top: 40%;
+	left: 40%;
+	position: absolute;
+	background: linear-gradient(to right,cyan,green);
+	font-size: 2rem;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-family: Comic Sans MS;
+
 }
 .about-me-title{
 z-index: 0;
