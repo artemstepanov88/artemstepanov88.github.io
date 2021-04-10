@@ -142,24 +142,13 @@ left: 80%;
 	
 .logo{
 position: absolute;
-top: 4%;
-left: 8%;
+top: 3%;
+left: 5%;
 z-index: 3;
-opacity: 0.5;
+opacity: 0.4;
 height: 40%;
 width: 26%;
 }
-	.logo480px{
-		visibility:hidden;
-	position: absolute;
-top: 30%;
-left: 40%;
-z-index: 3;
-opacity: 0.5;
-height: 3%;
-width: 3%;	
-	}
-
 .logo_skills{
 	position: absolute;
 	top: 20%;
