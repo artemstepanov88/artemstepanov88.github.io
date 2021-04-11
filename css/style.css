@@ -380,7 +380,10 @@ font-weight: 100;
 	margin-left: -150%;
 }
 @media screen and (max-width: 480px) {
-
+.a,.b,.c,.d,.g{
+	font-size: 1rem;
+	line-height: 1.5rem;
+}
 .logo480px{
 position: absolute;
 top: 25%;
