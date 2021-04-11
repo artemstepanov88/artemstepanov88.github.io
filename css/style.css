@@ -380,14 +380,20 @@ font-weight: 100;
 	margin-left: -150%;
 }
 @media screen and (max-width: 480px) {
+	.a,.b,.c,.d,.g{
+			font-size: 0.5rem;
+	line-height: 1.5rem;
+	margin: 1rem;
+		
+	}
 .logo480px{
 	position: absolute;
 top: 30%;
 left: 40%;
 z-index: 3;
 opacity: 0.5;
-height: 20%;
-width: 20%;	
+height: 30%;
+width: 30%;	
 }
 .logo{
 visibility:hidden;
