@@ -3,13 +3,14 @@ let logo = document.querySelector('.logo');
 
 logo.addEventListener('mouseover', function(){
     document.querySelector('.logo').style.opacity = 0.2; 
+         document.querySelector('.logo480px').style.width = 30%; 
+                document.querySelector('.logo480px').style.height = 30%; 
+        
    
 })
     logo.addEventListener('mouseout', function(){
         document.querySelector('.logo').style.opacity = 0.3; 
-                document.querySelector('.logo480px').style.width = 30%; 
-                document.querySelector('.logo480px').style.height = 30%; 
-        
+           
 })
 logo.addEventListener('mouseover', function(){
 
