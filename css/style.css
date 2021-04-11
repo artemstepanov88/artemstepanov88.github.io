@@ -380,13 +380,27 @@ font-weight: 100;
 	margin-left: -150%;
 }
 @media screen and (max-width: 480px) {
+	.name{
+position: absolute;
+top: 50%;
+left: 40%;
+font-size: 1rem;
+line-height: 1.5rem;
+}
+.name-info{
+position: absolute;
+top: 56%;
+left: 40%;
+font-size: 1rem;
+line-height: 1.5rem;
+}
 .a,.b,.c,.d,.g{
 	font-size: 1rem;
 	line-height: 1.5rem;
 }
 .logo_skills{
-	width: 30%;
-	}
+width: 30%;
+}
 .logo480px{
 position: absolute;
 top: 25%;
