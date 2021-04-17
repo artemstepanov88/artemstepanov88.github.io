@@ -400,9 +400,6 @@ line-height: 1.5rem;
 	line-height: 1.5rem;
 	white-space: nowrap;
 }
-.logo_skills{
-width: 30%;
-}
 .logo480px{
 position: absolute;
 top: 20%;
@@ -433,6 +430,41 @@ left: 0%;
 width: 100vw;
 height: 100vh;
 }
-		
+.about_me{
+z-index: 0;
+top: 40%;
+left: 4%;
+right: 4%;
+position: absolute;
+background: linear-gradient(to right,cyan,green);
+font-size: 1rem;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-family: Comic Sans MS;
 }
+.about_me{
+top: 30%;
+left: 32%;
+right: 4%;
+font-size: 1.5rem;
+
+	}
+.logo_skills{
+	width: 30%;
+	}
+.logo_jquery{
+	width: 20%;
+	}
+.logo_git{
+	width: 8%;
+	}
+.logo_bootstrap{
+	width: 16%;
+			}
+.logo_photoshop{
+	width: 14%;
+	}
+				
+}
+
 	
