@@ -314,7 +314,7 @@ background: linear-gradient(to right, cyan, blue, violet);
 background-size: 400% 400%;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
-font-size: 50px;
+font-size: 1rem;
 font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 font-weight: 100;
 }
@@ -327,7 +327,7 @@ font-weight: 100;
 	background-size: 400% 400%;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	font-size: 16px;
+font-size: 0.7rem;
 	font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 	font-weight: 50;
 }
@@ -389,9 +389,9 @@ line-height: 1.5rem;
 }
 .name-info{
 position: absolute;
-top: 56%;
+top: 52%;
 left: 40%;
-font-size: 0.7rem;
+font-size: 0.5rem;
 line-height: 1.5rem;
 }
 .a,.b,.c,.d,.g{
@@ -437,7 +437,7 @@ left: 4%;
 right: 4%;
 position: absolute;
 background: linear-gradient(to right,cyan,green);
-font-size: 1rem;
+font-size: 0.5rem;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 font-family: Comic Sans MS;
