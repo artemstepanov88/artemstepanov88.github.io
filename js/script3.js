@@ -13,13 +13,7 @@
   const far = 5;
   const camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
   camera.position.z = 2;
-    // the controls
-    	const controls = new OrbitControls( camera, renderer.domElement );
-				controls.minDistance = 20;
-				controls.maxDistance = 50;
-				controls.maxPolarAngle = Math.PI / 2;
-  const scene = new THREE.Scene();
-// the controls
+
   const boxWidth = 1;
   const boxHeight = 1;
   const boxDepth = 1;
