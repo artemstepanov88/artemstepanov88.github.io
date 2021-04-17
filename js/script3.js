@@ -13,7 +13,7 @@
   const far = 5;
   const camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
   camera.position.z = 2;
-
+    scene = new THREE.Scene();
   const boxWidth = 1;
   const boxHeight = 1;
   const boxDepth = 1;
