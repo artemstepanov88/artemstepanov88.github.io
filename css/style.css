@@ -315,20 +315,20 @@ background: linear-gradient(to right, cyan, blue, violet);
 background-size: 400% 400%;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
-font-size: 1rem;
+font-size: 2rem;
 font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 font-weight: 100;
 }
 .name-info{
 
 	position: absolute;
-	top: 56%;
+	top: 54%;
 	left: 40%;
 	background: linear-gradient(to right, cyan, blue, violet);
 	background-size: 400% 400%;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-font-size: 0.7rem;
+font-size: 1rem;
 	font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 	font-weight: 50;
 }
