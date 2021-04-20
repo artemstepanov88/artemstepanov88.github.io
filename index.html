@@ -24,7 +24,21 @@
         <canvas id="c"></canvas>
         <h1 class = "name">Artem Stepanov </h2>
     <h2 class="name-info">Junior Front-End developer</p>
-
+<form name="comment" action="comment.php" method="post">
+  <p>
+    <label>Имя:</label>
+    <input type="text" name="name" />
+  </p>
+  <p>
+    <label>Комментарий:</label>
+    <br />
+    <textarea name="text_comment" cols="30" rows="50"></textarea>
+  </p>
+  <p>
+    <input type="hidden" name="page_id" value="150" />
+    <input type="submit" value="Отправить" />
+  </p>
+</form>
         </header>
  <script src="js/script.js"></script>
  <script src="js/three.js"></script>
