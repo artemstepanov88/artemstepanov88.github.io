@@ -111,6 +111,16 @@ z-index: 0;
     mix-blend-mode: hue;
     mix-blend-mode: hard-light;
 }
+#disqus_thread{
+width: 20%;
+height: 20%;
+position: absolute;
+z-index: 0;
+	
+}
+	
+
+}
 .slider_wrap {
 	top:34%;
 
