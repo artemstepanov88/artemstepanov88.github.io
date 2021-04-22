@@ -109,19 +109,7 @@ z-index: 0;
 	opacity: .4;
 	mix-blend-mode: color;
     mix-blend-mode: hue;
-    mix-blend-mode: hard-light;
-}
-#disqus_thread{
-top: 60;
-left: 30;
-width: 20%;
-height: 20%;
-position: absolute;
-z-index: 5;
-	
-}
-	
-
+    mix-blend-mode: hard-light;	
 }
 .slider_wrap {
 	top:34%;
