@@ -112,6 +112,8 @@ z-index: 0;
     mix-blend-mode: hard-light;
 }
 #disqus_thread{
+top: 60;
+left: 30;
 width: 20%;
 height: 20%;
 position: absolute;
