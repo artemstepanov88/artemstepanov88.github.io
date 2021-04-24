@@ -13,6 +13,14 @@
   const far = 5;
   const camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
   camera.position.z = 2;
+      // Controls
+    const controls = new OrbitControls( camera, renderer.domElement );
+
+//controls.update() must be called after any manual changes to the camera's transform
+camera.position.set( 0, 20, 100 );
+controls.update();
+    
+    // Controls
     scene = new THREE.Scene();
   const boxWidth = 1;
   const boxHeight = 1;
