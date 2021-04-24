@@ -30,9 +30,17 @@
 <script src='https://unpkg.com/three@0.99.0/build/three.min.js'></script>
 <script src='https://unpkg.com/three@0.99.0/examples/js/controls/OrbitControls.js'></script>
 <script>
-  // Find the latest version by visiting https://cdn.skypack.dev/three.
+	
+	</script type = "module">
+		import { OrbitControls } from 'https://unpkg.com/three@0.99.0/examples/js/controls/OrbitControls.js';
+	const controls = new OrbitControls( camera, renderer.domElement );
+				controls.minDistance = 20;
+				controls.maxDistance = 50;
+				controls.maxPolarAngle = Math.PI / 2;
 
-
+	    </script>
+	    
+    <script>
 
 function main() {
     const canvas = document.querySelector('#c');
@@ -48,10 +56,6 @@ function main() {
   const camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
   camera.position.z = 2;
       // Controls
-const controls = new OrbitControls( camera, renderer.domElement );
-				controls.minDistance = 20;
-				controls.maxDistance = 50;
-				controls.maxPolarAngle = Math.PI / 2;
 
     
     // Controls
