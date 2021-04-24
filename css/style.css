@@ -101,10 +101,10 @@ z-index: 0;
 #disqus_thread{
 width: 100%;
 position: absolute;
-top: 70%;
+top: 60%;
 left: 0%;
 z-index: 3;
-	
+text-size: 5px;	
 	
 }
 .header::after {
