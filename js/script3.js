@@ -14,20 +14,6 @@
   camera.position.z = 2;
       // Controls
 
-				controls = new OrbitControls( camera, renderer.domElement );
-				controls.listenToKeyEvents( window ); // optional
-
-				//controls.addEventListener( 'change', render ); // call this only in static scenes (i.e., if there is no animation loop)
-
-				controls.enableDamping = true; // an animation loop is required when either damping or auto-rotation are enabled
-				controls.dampingFactor = 0.05;
-
-				controls.screenSpacePanning = false;
-
-				controls.minDistance = 100;
-				controls.maxDistance = 500;
-
-				controls.maxPolarAngle = Math.PI / 2;
     
     // Controls
     scene = new THREE.Scene();
