@@ -99,13 +99,11 @@ z-index: 0;
 }
 
 #disqus_thread{
-width: 100%;
+width: 50%;
 position: absolute;
 top: 60%;
-left: 0%;
-z-index: 3;
-text-size: 5px;	
-	
+left: 30%;
+z-index: 3;	
 }
 .header::after {
 	z-index: 2;
