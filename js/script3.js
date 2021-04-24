@@ -1,4 +1,3 @@
-import { OrbitControls } from 'https://unpkg.com/three@<VERSION>/examples/jsm/controls/OrbitControls.js'
 
   function main() {
     const canvas = document.querySelector('#c');
