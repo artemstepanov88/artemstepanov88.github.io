@@ -107,7 +107,6 @@ z-index: 3;
 }
 .header::after {
 	z-index: 2;
-    content: ""; 
     position: absolute;
     top: 0;
     left: 0;
