@@ -45,44 +45,42 @@ function main() {
   const camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
   camera.position.z = 2;
       // Controls
-	raycaster = new THREE.Raycaster();
-raycaster = new THREE.Raycaster();
-mouse = new THREE.Vector2()
-document.addEventListener('mousemove', onDocumentMouseMove, false);
-window.addEventListener('resize', onWindowResize, false);
-document.addEventListener('mousedown', onMouseDown, false);
+	function onDocumentMouseMove( event ) {
 
-
-function onDocumentMouseMove(event) {
     event.preventDefault();
-    mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
-    mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
-}
 
-function onWindowResize() {
-    camera.aspect = window.innerWidth / window.innerHeight;
-    camera.updateProjectionMatrix();
-    renderer.setSize(window.innerWidth, window.innerHeight);
-}
+    if ( isMouseDown ) {
 
-function manageRaycasterIntersections(scene, camera) {
-    camera.updateMatrixWorld();
-    raycaster.setFromCamera(mouse, camera);
-    var intersects = raycaster.intersectObjects(scene.children);
+        theta = - ( ( event.clientX - onMouseDownPosition.x ) * 0.5 )
+                + onMouseDownTheta;
+        phi = ( ( event.clientY - onMouseDownPosition.y ) * 0.5 )
+              + onMouseDownPhi;
 
-    if (intersects.length > 0) {
+        phi = Math.min( 180, Math.max( 0, phi ) );
 
-    } 
-    else {
+        camera.position.x = radious * Math.sin( theta * Math.PI / 360 )
+                            * Math.cos( phi * Math.PI / 360 );
+        camera.position.y = radious * Math.sin( phi * Math.PI / 360 );
+        camera.position.z = radious * Math.cos( theta * Math.PI / 360 )
+                            * Math.cos( phi * Math.PI / 360 );
+        camera.updateMatrix();
 
     }
-}
 
-function onMouseDown(event){
-   customLog("mouse position: (" + mouse.x + ", "+ mouse.y + ")");
+    mouse3D = projector.unprojectVector(
+        new THREE.Vector3(
+            ( event.clientX / renderer.domElement.width ) * 2 - 1,
+            - ( event.clientY / renderer.domElement.height ) * 2 + 1,
+            0.5
+        ),
+        camera
+    );
+    ray.direction = mouse3D.subSelf( camera.position ).normalize();
+
+    interact();
+    render();
+
 }
-	
-	
     
     // Controls
     scene = new THREE.Scene();
