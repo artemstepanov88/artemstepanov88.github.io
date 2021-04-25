@@ -45,6 +45,7 @@ function main() {
   const camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
   camera.position.z = 2;
       // Controls
+	raycaster = new THREE.Raycaster();
 raycaster = new THREE.Raycaster();
 mouse = new THREE.Vector2()
 document.addEventListener('mousemove', onDocumentMouseMove, false);
