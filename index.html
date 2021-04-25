@@ -28,7 +28,6 @@
         </header>
  <script src="js/script.js"></script>
 <script src='https://threejs.org/build/three.js'></script>
-<script src='https://threejs.org/examples/jsm/controls/OrbitControls.js'></script>
 	    
     <script>
 
@@ -46,9 +45,7 @@ function main() {
   const camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
   camera.position.z = 2;
       // Controls
-import { OrbitControls } from 'https://threejs.org/examples/jsm/controls/OrbitControls.js';
 
-  const controls = new OrbitControls();
     
     // Controls
     scene = new THREE.Scene();
