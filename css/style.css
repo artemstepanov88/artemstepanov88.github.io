@@ -329,7 +329,7 @@ font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 font-weight: 100;
 }
 .name-info{
-
+margin-top:2em;
 	position: absolute;
 	top: 54%;
 	left: 40%;
