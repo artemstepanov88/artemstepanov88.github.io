@@ -9,7 +9,7 @@ import {GLTFLoader} from 'https://threejsfundamentals.org/threejs/resources/thre
       canvas,
       alpha: true,
     });
-  const fov = 85;
+  const fov = 75;
   const aspect = 2;  // the canvas default
   const near = 0.1;
   const far = 10;
