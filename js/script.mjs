@@ -14,7 +14,9 @@ import {GLTFLoader} from 'https://threejsfundamentals.org/threejs/resources/thre
   const near = 0.1;
   const far = 10;
   const camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
-	camera.position.z = 1;
+	camera.position.z = 2;
+	camera.position.y = 2;
+	camera.position.x = 2;
       // Controls
 	
   const controls = new OrbitControls(camera, canvas);
