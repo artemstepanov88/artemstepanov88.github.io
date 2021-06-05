@@ -50,6 +50,8 @@ import {GLTFLoader} from 'https://threejsfundamentals.org/threejs/resources/thre
 	
   const controls = new OrbitControls(camera, canvas);
   controls.target.set(0, 5, 0);
+	 controls.minDistance = 50;
+	 controls.maxDistance = 200;
   controls.update();
     
     // Controls
