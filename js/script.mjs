@@ -15,9 +15,9 @@ import {GLTFLoader} from 'https://threejsfundamentals.org/threejs/resources/thre
   const far = 5;
 	// camera
 
-				camera = new THREE.PerspectiveCamera( 40, window.innerWidth / window.innerHeight, 1, 1000 );
-				camera.position.set( 15, 20, 30 );
-				scene.add( camera );
+		
+camera = new THREE.PerspectiveCamera( 50, window.innerWidth / window.innerHeight, 0.01, 10000 );
+camera.position.set( 0, 50, 500 );
 
     // Controls
   const controls = new OrbitControls(camera, canvas);
