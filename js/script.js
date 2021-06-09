@@ -31,3 +31,8 @@ c.addEventListener('mouseout', function(){
     document.querySelector('.name-info').textContent = "Junior Front-End developer"; 
  
 } )
+
+logo_jquery.addEventListener('mouseover', function(){
+    document.querySelector('.logo_jquery').style = 'width: 10%; height: 10%;';
+ 
+} )
