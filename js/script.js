@@ -36,3 +36,8 @@ logo_jquery.addEventListener('mouseover', function(){
     document.querySelector('img.logo_jquery').style = 'width: 10%; height: 10%;';
  
 } )
+
+logo_jquery.addEventListener('mouseoout', function(){
+    document.querySelector('img.logo_jquery').style = 'width: 20%; height: 20%;';
+ 
+} )
