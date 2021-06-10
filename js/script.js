@@ -34,12 +34,12 @@ c.addEventListener('mouseout', function(){
 let jquery = document.querySelector('.logo_jquery');
 
 jquery.addEventListener('mouseover', function(){
-    document.querySelector('img.logo_jquery').style.width = '10%';
-      document.querySelector('logo_jquery').style.height = '10%';
+    document.querySelector('.logo_jquery').style.width = '10%';
+      document.querySelector('.logo_jquery').style.height = '10%';
  
 } )
 
 jquery.addEventListener('mouseoout', function(){
-    document.querySelector('logo_jquery').style = 'width: 20%; height: 20%;';
+    document.querySelector('.logo_jquery').style = 'width: 20%; height: 20%;';
  
 } )
