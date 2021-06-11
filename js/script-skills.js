@@ -7,8 +7,11 @@ skills.addEventListener('mouseover', function(){
             document.querySelector('.skills-title').textContent = "Навыки";
         } )
 let jquery = document.querySelector('.jquery_skills');
+    jquery.addEventListener('mouseover', function(){
 
-   jquery.querySelector('.jquery_skills').style.height = "10%";
+    jquery.querySelector('.jquery_skills').style.height = "10%";
+
+
     
 } )
     jquery.addEventListener('mouseout', function(){
