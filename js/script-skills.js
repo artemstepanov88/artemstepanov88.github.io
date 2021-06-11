@@ -6,7 +6,7 @@ skills.addEventListener('mouseover', function(){
     skills.addEventListener('mouseout', function(){
             document.querySelector('.skills-title').textContent = "Навыки";
         } )
-let jquery = document.querySelector('.logo_jquery');
+let jquery = document.querySelector('img.logo_jquery');
     jquery.addEventListener('mouseover', function(){
 
     jquery.querySelector('img.logo_jquery').style.height = "10%";
@@ -15,5 +15,6 @@ let jquery = document.querySelector('.logo_jquery');
     
 } )
     jquery.addEventListener('mouseout', function(){
+            document.querySelector('img.logo_jquery').style.width = "20%";
             document.querySelector('img.logo_jquery').style.height = "20%";
         } )
