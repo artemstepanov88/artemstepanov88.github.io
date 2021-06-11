@@ -6,14 +6,14 @@ skills.addEventListener('mouseover', function(){
     skills.addEventListener('mouseout', function(){
             document.querySelector('.skills-title').textContent = "Навыки";
         } )
-let jquery = document.querySelector('.jquery_skills');
+let jquery = document.querySelector('.logo_jquery');
     jquery.addEventListener('mouseover', function(){
 
-    jquery.querySelector('.jquery_skills').style.height = "10%";
+    jquery.querySelector('.logo_jquery').style.height = "10%";
 
 
     
 } )
     jquery.addEventListener('mouseout', function(){
-            document.querySelector('.jquery_skills').style.height = "20%";
+            document.querySelector('.logo_jquery').style.height = "20%";
         } )
