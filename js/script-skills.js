@@ -1,6 +1,6 @@
 let skills = document.querySelector('.skills-title');
 skills.addEventListener('mouseover', function(){
-    document.querySelector('.skills-title').textContent = "НАВЫКИ";
+    document.querySelector('.skills-title').textContent = "Skills";
     
 } )
     skills.addEventListener('mouseout', function(){
