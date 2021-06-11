@@ -32,14 +32,14 @@ c.addEventListener('mouseout', function(){
  
 } )
 let j = document.querySelector('.a');
-
 j.addEventListener('mouseover', function(){
-    document.querySelector('.a').style.fontSize = 10rem;
+    document.querySelector('.a').textContent = "Junior Front-End developer";
      
  console.log("Работатет 11.06.21")
 } )
 
 j.addEventListener('mouseout', function(){
-   document.querySelector('.b').style.fontSize = 10rem;
-  console.log("Работатет 11.06.21 ++")
+   document.querySelector('.a').textContent = "Junioе developer";
+  
+  console.log("Работатет 11.06.21++")
 } )
