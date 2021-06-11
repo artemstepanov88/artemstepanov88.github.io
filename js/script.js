@@ -36,4 +36,4 @@ j.addEventListener('mouseover', function(){
     document.querySelector('.g').textContent = "Junior Front-End developer";
      
  console.log("Работатет 11.06.21")
-
+} )
