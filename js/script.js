@@ -34,8 +34,8 @@ c.addEventListener('mouseout', function(){
 let j = document.querySelector('.logo_jquery');
 
 j.addEventListener('mouseover', function(){
-    document.querySelector('.logo_jquery').style.width = 10px;
-      document.querySelector('.logo_jquery').style.height = 10px;
+    document.querySelector('.logo_jquery').style.width = 10 + px;
+      document.querySelector('.logo_jquery').style.height = 10 + px;
  console.log("Работатет 11.06.21")
 } )
 
