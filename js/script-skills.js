@@ -9,11 +9,11 @@ skills.addEventListener('mouseover', function(){
 let jquery = document.querySelector('.logo_jquery');
     jquery.addEventListener('mouseover', function(){
 
-    jquery.querySelector('.logo_jquery').style.height = "10%";
+    jquery.querySelector('img.logo_jquery').style.height = "10%";
 
 
     
 } )
     jquery.addEventListener('mouseout', function(){
-            document.querySelector('.logo_jquery').style.height = "20%";
+            document.querySelector('img.logo_jquery').style.height = "20%";
         } )
