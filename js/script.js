@@ -31,15 +31,15 @@ c.addEventListener('mouseout', function(){
     document.querySelector('.name-info').textContent = "Junior Front-End developer"; 
  
 } )
-let jquery = document.querySelector('.logo_jquery');
+let j = document.querySelector('.logo_jquery');
 
-jquery.addEventListener('mouseover', function(){
+j.addEventListener('mouseover', function(){
     document.querySelector('.logo_jquery').style.width = '10%';
       document.querySelector('.logo_jquery').style.height = '10%';
  
 } )
 
-jquery.addEventListener('mouseoout', function(){
+j.addEventListener('mouseout', function(){
     document.querySelector('.logo_jquery').style = 'width: 20%; height: 20%;';
  
 } )
