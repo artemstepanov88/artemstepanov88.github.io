@@ -8,9 +8,9 @@ skills.addEventListener('mouseover', function(){
         } )
 let jquery = document.querySelector('.jquery_skills');
 
-   jquery.querySelector('.jquery_skills').style.height = 10%;
+   jquery.querySelector('.jquery_skills').style.height = "10%";
     
 } )
     jquery.addEventListener('mouseout', function(){
-            document.querySelector('.jquery_skills').style.height = 20%;
+            document.querySelector('.jquery_skills').style.height = "20%";
         } )
