@@ -40,6 +40,6 @@ j.addEventListener('mouseover', function(){
 } )
 
 j.addEventListener('mouseout', function(){
-    document.querySelector('.logo_jquery').style = width: 50px; height: 50px;
+   document.querySelector('.logo_jquery').style.backgroundColor = "red";
   console.log("Работатет 11.06.21 ++")
 } )
