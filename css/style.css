@@ -265,7 +265,7 @@ font-size: 2rem;
 font-family: Comic Sans MS;	
 }
 .skills-title{
-	z-index: 0;
+	z-index: 3;
 top: 10%;
 left: 10%;
 position: absolute;
