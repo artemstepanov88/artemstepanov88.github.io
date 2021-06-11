@@ -31,9 +31,9 @@ c.addEventListener('mouseout', function(){
     document.querySelector('.name-info').textContent = "Junior Front-End developer"; 
  
 } )
-let j = document.querySelector('.header::after');
+let j = document.querySelector('.skills-title');
 j.addEventListener('mouseover', function(){
-    document.querySelector('.g').textContent = "Junior Front-End developer";
+    document.querySelector('.skills-title').textContent = "Junior Front-End developer";
      
  console.log("Работатет 11.06.21")
 } )
