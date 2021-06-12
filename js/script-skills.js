@@ -9,13 +9,12 @@ skills.addEventListener('mouseover', function(){
 let jquery = document.querySelector('img.logo_jquery');
     jquery.addEventListener('mouseover', function(){
          
-        document.querySelector('img.logo_jquery').style.width = "20%";
-            document.querySelector('img.logo_jquery').style.height = "163px";
+            document.querySelector('img.logo_jquery').style.transform = "rotate(50deg)";
 
 
     
 } )
     jquery.addEventListener('mouseout', function(){
-            document.querySelector('img.logo_jquery').style.width = "20%";
-            document.querySelector('img.logo_jquery').style.height = "20%";
+    
+        document.querySelector('img.logo_jquery').style.transform = "rotate(-50deg)";
         } )
