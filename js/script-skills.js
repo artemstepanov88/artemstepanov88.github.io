@@ -16,5 +16,5 @@ let jquery = document.querySelector('img.logo_jquery');
 } )
     jquery.addEventListener('mouseout', function(){
     
-        document.querySelector('img.logo_jquery').style.transform = "rotate(-25deg)";
+        document.querySelector('img.logo_jquery').style.transform = "rotate(0deg)";
         } )
