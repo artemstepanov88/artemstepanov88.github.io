@@ -9,10 +9,10 @@ import {GLTFLoader} from 'https://threejsfundamentals.org/threejs/resources/thre
       canvas,
       alpha: true,
     });
-  const fov = 100;
+  const fov = 45;
   const aspect = 2;  // the canvas default
   const near = 0.1;
-  const far = 45;
+  const far = 100;
   const camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
   camera.position.x = 0;
     camera.position.y = 10;
