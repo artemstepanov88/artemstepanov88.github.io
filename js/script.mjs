@@ -24,9 +24,9 @@ import {GLTFLoader} from 'https://threejsfundamentals.org/threejs/resources/thre
   controls.update();
     // Controls
  const scene = new THREE.Scene();
-  const boxWidth = 10;
-  const boxHeight = 10;
-  const boxDepth = 10;
+  const boxWidth = 14;
+  const boxHeight = 14;
+  const boxDepth = 14;
   const geometry = new THREE.BoxBufferGeometry(boxWidth, boxHeight, boxDepth);
 
   const cubes = [];  // just an array we can use to rotate the cubes
