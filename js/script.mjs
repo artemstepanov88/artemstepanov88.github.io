@@ -16,7 +16,7 @@ import {GLTFLoader} from 'https://threejsfundamentals.org/threejs/resources/thre
   const camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
   camera.position.x = 50;
     camera.position.y = 50;
-    camera.position.z = 50;
+    camera.position.z = 0;
 
     // Controls
   const controls = new OrbitControls(camera, canvas);
@@ -24,9 +24,9 @@ import {GLTFLoader} from 'https://threejsfundamentals.org/threejs/resources/thre
   controls.update();
     // Controls
  const scene = new THREE.Scene();
-  const boxWidth = 1;
-  const boxHeight = 1;
-  const boxDepth = 1;
+  const boxWidth = 2;
+  const boxHeight = 2;
+  const boxDepth = 2;
   const geometry = new THREE.BoxBufferGeometry(boxWidth, boxHeight, boxDepth);
 
   const cubes = [];  // just an array we can use to rotate the cubes
