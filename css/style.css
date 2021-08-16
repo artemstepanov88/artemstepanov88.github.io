@@ -382,7 +382,14 @@ font-size: 1rem;
 .d{
 	margin-left: -70%;
 }
-
+.d:hover{
+	font-size: 30px;
+	-webkit-text-fill-color: transparent;
+	background: linear-gradient(to right,orange,yellow,cyan);
+	transition: all .3s linear;
+	-webkit-background-clip: text;
+	-webkit-transition: all .3s linear;
+	-moz-transition: all .3s linear; 
 .g{
 	margin-left: -190%;
 }
