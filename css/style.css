@@ -394,10 +394,28 @@ font-size: 1rem;
 .g{
 	margin-left: -190%;
 }
+.g:hover{
+	font-size: 30px;
+	-webkit-text-fill-color: transparent;
+	background: linear-gradient(to right,orange,yellow,cyan);
+	transition: all .3s linear;
+	-webkit-background-clip: text;
+	-webkit-transition: all .3s linear;
+	-moz-transition: all .3s linear; 
+}
 .e {
 
-    margin-left: -520%;
+    margin-left: -500%;
 
+}
+.e:hover{
+	font-size: 30px;
+	-webkit-text-fill-color: transparent;
+	background: linear-gradient(to right,orange,yellow,cyan);
+	transition: all .3s linear;
+	-webkit-background-clip: text;
+	-webkit-transition: all .3s linear;
+	-moz-transition: all .3s linear; 
 }
 @media screen and (max-width: 480px) {
 	.name{
