@@ -417,6 +417,14 @@ font-size: 1rem;
 	-webkit-transition: all .3s linear;
 	-moz-transition: all .3s linear; 
 }
+.f{
+
+    margin-left: -190%;
+
+}
+
+
+
 @media screen and (max-width: 480px) {
 	.name{
 position: absolute;
