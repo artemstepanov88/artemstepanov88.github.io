@@ -390,10 +390,15 @@ font-size: 1rem;
 	-webkit-background-clip: text;
 	-webkit-transition: all .3s linear;
 	-moz-transition: all .3s linear; 
+}
 .g{
 	margin-left: -190%;
 }
+.e {
 
+    margin-left: -520%;
+
+}
 @media screen and (max-width: 480px) {
 	.name{
 position: absolute;
@@ -469,5 +474,3 @@ font-size: 1rem;
 	width: 14%;
 	}			
 }
-
-	
