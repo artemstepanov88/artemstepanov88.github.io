@@ -336,7 +336,10 @@ function init() {
     for(var i=0; i<N; i++){
         var boxbody = new CANNON.Body({ mass: mass, color: 0xFF0000 });
         boxbody.addShape(boxShape);
-        var boxMesh = new THREE.Mesh(boxGeometry, material);
+         const textu = new THREE.ImageUtils.loadTexture( 'img/4 min.png' );
+         const materi = new THREE.MeshBasicMaterial({map : textu});
+        var boxMesh = new THREE.Mesh(boxGeometry, materi);
+        
  
         boxbody.position.set(5,(N-i)*(size*2+2*space) + size*2+space,0);
         boxbody.linearDamping = 0.01;
