@@ -295,7 +295,7 @@ function init() {
         var y = 1 + (Math.random()-0.5)*1;
         var z = (Math.random()-0.5)*20;
         var boxBody = new CANNON.Body({ mass: 5 });
-        const texture = new THREE.TextureLoader().load( 'img/2.jpg' );
+        const texture = new THREE.ImageUtils.loadTexture( 'img/2.jpg' );
         boxBody.addShape(boxShape);
 
         const material = new THREE.MeshBasicMaterial({map : texture});
