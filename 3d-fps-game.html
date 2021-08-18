@@ -201,19 +201,12 @@ function initCannon(){
     // We must add the contact materials to the world
     world.addContactMaterial(physicsContactMaterial);
 //    Background Test !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-	const loader = new THREE.CubeTextureLoader();
-				loader.setPath( 'img/blue-forest 3.jpg' );
-
-				textureCube = loader.load( [ 'img/blue-forest 3.jpg', 'img/blue-forest 3.jpg', 'img/blue-forest 3.jpg', 'img/blue-forest 3.jpg', 'img/blue-forest 3.jpg', 'img/blue-forest 3.jpg' ] );
-				textureCube.encoding = THREE.sRGBEncoding;
-
-				const textureLoader = new THREE.TextureLoader();
-
-				textureEquirec = textureLoader.load( 'img/blue-forest 3.jpg' );
-				textureEquirec.mapping = THREE.EquirectangularReflectionMapping;
-				textureEquirec.encoding = THREE.sRGBEncoding;
-
-				scene.background = textureCube;
+     var tex = THREE.ImageUtils.loadTexture( 'img/blue-forest 3.jpg' );
+        var backgroundMesh = new THREE.Mesh(
+            new THREE.PlaneGeometry(2, 2, 0),
+            new THREE.MeshBasicMaterial({
+                map: tex
+            }));
 
 //            Background Test !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
