@@ -110,8 +110,8 @@ left: 0;
 #disqus_thread{
 width: 50%;
 position: absolute;
-top: 60%;
-left: 20%;
+top: 20%;
+left: 24%;
 z-index: 3;	
 }
 .header::after {
