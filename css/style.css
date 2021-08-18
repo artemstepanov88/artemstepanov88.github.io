@@ -405,7 +405,7 @@ font-size: 1rem;
 }
 .e {
 
-    margin-left: -500%;
+    margin-left: -620%;
 
 }
 .e:hover{
@@ -445,6 +445,7 @@ line-height: 1.5rem;
 	font-size: 1rem;
 	line-height: 1.5rem;
 	white-space: nowrap;
+	margin:5%;
 }
 .logo480px{
 position: absolute;
