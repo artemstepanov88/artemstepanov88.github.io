@@ -416,7 +416,10 @@ window.addEventListener("click",function(e){
         var z = sphereBody.position.z;
         var ballBody = new CANNON.Body({ mass: 1 });
         ballBody.addShape(ballShape);
-        var ballMesh = new THREE.Mesh( ballGeometry, material );
+        const text = new THREE.ImageUtils.loadTexture( 'img/4.jpg' );
+        const mater = new THREE.MeshBasicMaterial({map : text});
+        var ballMesh = new THREE.Mesh( ballGeometry, mater );
+   
         world.add(ballBody);
         scene.add(ballMesh);
         ballMesh.castShadow = true;
