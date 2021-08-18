@@ -200,12 +200,22 @@ function initCannon(){
                                                             );
     // We must add the contact materials to the world
     world.addContactMaterial(physicsContactMaterial);
-//
-const textureLoader = new THREE.TextureLoader();
+//    Background Test !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	const loader = new THREE.CubeTextureLoader();
+				loader.setPath( 'img/blue-forest 3.jpg' );
 
-var grassNormalMap = textureLoader.load("img/1.jpg");
+				textureCube = loader.load( [ 'img/blue-forest 3.jpg', 'img/blue-forest 3.jpg', 'img/blue-forest 3.jpg', 'img/blue-forest 3.jpg', 'img/blue-forest 3.jpg', 'img/blue-forest 3.jpg' ] );
+				textureCube.encoding = THREE.sRGBEncoding;
 
-//
+				const textureLoader = new THREE.TextureLoader();
+
+				textureEquirec = textureLoader.load( 'img/blue-forest 3.jpg' );
+				textureEquirec.mapping = THREE.EquirectangularReflectionMapping;
+				textureEquirec.encoding = THREE.sRGBEncoding;
+
+				scene.background = textureCube;
+
+//            Background Test !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
   // Create a sphere
     var mass = 5, radius = 1.3;
