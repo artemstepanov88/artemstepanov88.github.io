@@ -9,8 +9,8 @@ skills.addEventListener('mouseover', function(){
 let jquery = document.querySelector('img.logo_jquery');
     jquery.addEventListener('mouseover', function(){
          
-            document.querySelector('img.logo_jquery').style.transition = "rotate(50deg)";
-
+            document.querySelector('img.logo_jquery').style.transition = "2s";
+            document.querySelector('img.logo_jquery').style.transform = "rotate:-50deg";
 
     
 } )
