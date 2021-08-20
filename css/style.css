@@ -416,15 +416,7 @@ font-size: 1rem;
     margin-left: -620%;
 
 }
-.e:hover{
-	font-size: 30px;
-	-webkit-text-fill-color: transparent;
-	background: linear-gradient(to right,orange,yellow,cyan);
-	transition: all .3s linear;
-	-webkit-background-clip: text;
-	-webkit-transition: all .3s linear;
-	-moz-transition: all .3s linear; 
-}
+
 .f{
 
     margin-left: -190%;
