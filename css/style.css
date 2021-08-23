@@ -159,11 +159,10 @@ width:100%;
 .my-logo{
 position: absolute;
 top: 3%;
-left: 35%;
+left: 4%;
 z-index: 3;
-opacity: 0.8;
-height: 20%;
-border-radius:5%;
+height: 10%;
+border-radius:10%;
 }	
 .logo{
 position: absolute;
