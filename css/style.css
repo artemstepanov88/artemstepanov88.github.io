@@ -162,7 +162,8 @@ top: 3%;
 left: 35%;
 z-index: 3;
 opacity: 0.8;
-
+height: 20%;
+border-radius:5%;
 }	
 .logo{
 position: absolute;
