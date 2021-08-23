@@ -161,6 +161,7 @@ position: absolute;
 top: 10%;
 left: 4%;
 z-index: 3;
+opacity:0.8;
 width: 4%;
 border-radius:25%;
 }	
