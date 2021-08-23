@@ -19,13 +19,13 @@ let jquery = document.querySelector('img.logo_jquery');
     
         document.querySelector('img.logo_jquery').style.transform = "rotate(20deg)";
         } )
-let skills_logo = document.querySelector('img.logo_skills');
+let skills_logo = document.querySelector('img.logo_git');
     skills_logo.addEventListener('mouseover', function(){
       
-         document.querySelector('img.logo_skills').style.transition = "all 2s";
-          document.querySelector('img.logo_skills').style.transform = "rotate:(50deg)";
+         document.querySelector('img.logo_git').style.transition = "all 2s";
+          document.querySelector('img.logo_git').style.transform = "rotate:(50deg)";
 } )
     skills_logo.addEventListener('mouseout', function(){
    
-     document.querySelector('img.logo_skills').style.transform = "rotate:(20deg)";
+     document.querySelector('img.logo_git').style.transform = "rotate:(20deg)";
         } )
