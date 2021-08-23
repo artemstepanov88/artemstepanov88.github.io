@@ -27,5 +27,5 @@ let skills_logo = document.querySelector('img.logo_skills');
 } )
     skills_logo.addEventListener('mouseout', function(){
     
-        skills_logo.querySelector('.logo_skills').style.transform = "rotate(-20deg)";
+        skills_logo.querySelector('.logo_skills').style.transform = "rotate:(-20deg)";
         } )
