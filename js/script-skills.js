@@ -19,13 +19,24 @@ let jquery = document.querySelector('img.logo_jquery');
     
         document.querySelector('img.logo_jquery').style.transform = "rotate(360deg)";
         } )
-let skills_logo = document.querySelector('img.logo_git');
-    skills_logo.addEventListener('mouseover', function(){
+let git_logo = document.querySelector('img.logo_git');
+    git_logo.addEventListener('mouseover', function(){
       
          document.querySelector('img.logo_git').style.transition = "all 1s";
          
 } )
-    skills_logo.addEventListener('mouseout', function(){
+    git_logo.addEventListener('mouseout', function(){
    
        document.querySelector('img.logo_git').style.transform = "rotate(360deg)";
+        } )
+
+let skills_logo = document.querySelector('img.logo_skills');
+    skills_logo.addEventListener('mouseover', function(){
+      
+         document.querySelector('img.logo_skills').style.transition = "all 1s";
+         
+} )
+   skills_logo.addEventListener('mouseout', function(){
+   
+       document.querySelector('img.logo_skills').style.transform = "rotate(360deg)";
         } )
