@@ -1,6 +1,7 @@
 let skills = document.querySelector('.skills-title');
 skills.addEventListener('mouseover', function(){
     document.querySelector('.skills-title').textContent = "Skills";
+     document.querySelector('skills-title').style.transition = "all 2s";
     
 } )
     skills.addEventListener('mouseout', function(){
