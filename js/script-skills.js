@@ -10,7 +10,7 @@ let jquery = document.querySelector('img.logo_jquery');
     jquery.addEventListener('mouseover', function(){
          
             document.querySelector('img.logo_jquery').style.transition = "all 2s";
-            document.querySelector('img.logo_jquery').style.transform = "rotate:-50deg";
+            document.querySelector('img.logo_jquery').style.transform = "rotate:(-50deg");
 
     
 } )
