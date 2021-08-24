@@ -316,7 +316,7 @@ display: flex;
 	animation: rainbow 30s ease infinite;
 	font-size: 1.5rem;
 	line-height: 2.5rem;
-margin: 10px;
+        margin: 10px;
 	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 @-webkit-keyframes rainbow {
@@ -377,7 +377,7 @@ line-height: 1.5rem;
 	font-size: 1rem;
 	line-height: 1.5rem;
 	white-space: nowrap;
-	margin:20px;
+	margin:10px;
 }
 .logo480px{
 position: absolute;
