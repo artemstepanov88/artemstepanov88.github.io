@@ -116,7 +116,6 @@ position: absolute;
 top: 14%;
 left: 24%;
 z-index: 3;
-color:red;
 }
 .header::after {
     z-index: 2;
@@ -274,7 +273,7 @@ font-family: Comic Sans MS;
 }
 
 .certificates-title{
-	z-index: 0;
+z-index: 0;
 top: 10%;
 left: 10%;
 position: absolute;
@@ -285,7 +284,7 @@ font-size: 2rem;
 font-family: Comic Sans MS;	
 }
 .skills-title{
-	z-index: 3;
+z-index: 3;
 top: 80%;
 left: 44%;
 position: absolute;
