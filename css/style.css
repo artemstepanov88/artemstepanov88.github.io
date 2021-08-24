@@ -282,8 +282,8 @@ font-family: Comic Sans MS;
 }
 .skills-title{
 	z-index: 3;
-top: 10%;
-left: 10%;
+top: 80%;
+left: 20%;
 position: absolute;
 background: linear-gradient(to right, cyan, blue, violet);
 font-size: 2rem;
@@ -297,7 +297,7 @@ font-family: Comic Sans MS;
 	justify-content: space-between;
 	text-decoration: none;
 }
-.a,.b,.c,.d,.g,.e,.f{
+.a,.b,.c,.d,.g,.e{
 	background: linear-gradient(to right, red, orange, yellow, green, cyan, blue, violet);
 	background-size: 400% 400%;
 	-webkit-background-clip: text;
@@ -425,12 +425,6 @@ font-size: 1rem;
 
 }
 
-.f{
-
-    margin-left: -190%;
-
-}
-
 
 
 @media screen and (max-width: 480px) {
@@ -448,7 +442,7 @@ left: 40%;
 font-size: 0.5rem;
 line-height: 1.5rem;
 }
-.a,.b,.c,.d,.g,.e,.f{
+.a,.b,.c,.d,.g,.e{
 	margin-left: 5%;
 	font-size: 1rem;
 	line-height: 1.5rem;
