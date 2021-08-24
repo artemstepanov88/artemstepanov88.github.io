@@ -99,8 +99,8 @@ background: url("../img/blue-forest 3.jpg") center no-repeat;
 z-index: 0;
 }
 .main{
-width: 100%;
-height: 100%;
+width: 100vw;
+height: 100vh;
 position: absolute;
 background: url("https://kartinkin.com/uploads/posts/2021-07/thumbs/1627146387_15-kartinkin-com-p-sinii-kirpichnii-fon-krasivo-17.jpg") no-repeat;
 z-index: 0;
@@ -355,78 +355,6 @@ font-size: 1rem;
 	font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 	font-weight: 50;
 }
-
-.a{
-	margin-left: -60%;
-}
-.a:hover{
-	font-size: 30px;
-	-webkit-text-fill-color: transparent;
-	background: linear-gradient(to right, cyan,green,yellow);
-	transition: all .3s linear;
-	-webkit-background-clip: text;
-	-webkit-transition: all .3s linear;
-	-moz-transition: all .3s linear; 
-}
-
-
-.b{
-	margin-left: -26%;
-}
-.b:hover{
-	font-size: 30px;
-	-webkit-text-fill-color: transparent;
-	background: linear-gradient(to right,yellow,green,cyan);
-	transition: all .3s linear;
-	-webkit-background-clip: text;
-	-webkit-transition: all .3s linear;
-	-moz-transition: all .3s linear; 
-}
-
-.c{
-	margin-left: 4%;
-}
-.c:hover{
-	font-size: 30px;
-	-webkit-text-fill-color: transparent;
-	background: linear-gradient(to right,orange,yellow,cyan);
-	transition: all .3s linear;
-	-webkit-background-clip: text;
-	-webkit-transition: all .3s linear;
-	-moz-transition: all .3s linear; 
-}
-
-.d{
-	margin-left: -70%;
-}
-.d:hover{
-	font-size: 30px;
-	-webkit-text-fill-color: transparent;
-	background: linear-gradient(to right,orange,yellow,cyan);
-	transition: all .3s linear;
-	-webkit-background-clip: text;
-	-webkit-transition: all .3s linear;
-	-moz-transition: all .3s linear; 
-}
-.g{
-	margin-left: -190%;
-}
-.g:hover{
-	font-size: 30px;
-	-webkit-text-fill-color: transparent;
-	background: linear-gradient(to right,orange,yellow,cyan);
-	transition: all .3s linear;
-	-webkit-background-clip: text;
-	-webkit-transition: all .3s linear;
-	-moz-transition: all .3s linear; 
-}
-.e {
-
-    margin-left: -620%;
-
-}
-
-
 
 @media screen and (max-width: 480px) {
 	.name{
