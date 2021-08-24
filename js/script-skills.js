@@ -44,11 +44,11 @@ let skills_logo = document.querySelector('img.logo_skills');
 
 let my_gif = document.querySelector('img.my-logo');
     my_gif.addEventListener('mouseover', function(){
-      document.querySelector('img..my-logo').style.transform = "rotate(360deg)";
-         document.querySelector('img..my-logo').style.transition = "all 1s";
+      document.querySelector('img.my-logo').style.transform = "rotate(360deg)";
+         document.querySelector('img.my-logo').style.transition = "all 1s";
          
 } )
    my_gif.addEventListener('mouseout', function(){
    
-       document.querySelector('img..my-logo').style.transform = "rotate(360deg)";
+       document.querySelector('img.my-logo').style.transform = "rotate(360deg)";
         } )
