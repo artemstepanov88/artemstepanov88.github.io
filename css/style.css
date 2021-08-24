@@ -112,7 +112,8 @@ width: 50%;
 position: absolute;
 top: 14%;
 left: 24%;
-z-index: 3;	
+z-index: 3;
+text-color:red;
 }
 .header::after {
     z-index: 2;
