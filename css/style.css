@@ -307,7 +307,7 @@ font-family: Comic Sans MS;
 	animation: rainbow 30s ease infinite;
 	font-size: 1.5rem;
 	line-height: 2.5rem;
-	
+	margin:1%;
 	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 @-webkit-keyframes rainbow {
