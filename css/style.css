@@ -99,8 +99,8 @@ background: url("../img/blue-forest 3.jpg") center no-repeat;
 z-index: 0;
 }
 .main{
-width: 100vw;
-height: 100vh;
+width: 100%;
+height: 100%;
 position: absolute;
 background: url("https://kartinkin.com/uploads/posts/2021-07/thumbs/1627146387_15-kartinkin-com-p-sinii-kirpichnii-fon-krasivo-17.jpg") center no-repeat;
 z-index: 0;
