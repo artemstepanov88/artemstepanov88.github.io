@@ -105,7 +105,7 @@ background: url("https://kartinkin.com/uploads/posts/2021-07/thumbs/1627146387_1
 --moz-background-size:100%;
 -webkit-background-size:100%;
 -o-background-size:100%;
-background-size:100%;
+background-size:cover;
 z-index: 0;
 top: 100%;
 left: 0;
