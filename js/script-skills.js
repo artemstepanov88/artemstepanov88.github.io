@@ -41,3 +41,14 @@ let skills_logo = document.querySelector('img.logo_skills');
    
        document.querySelector('img.logo_skills').style.transform = "rotate(360deg)";
         } )
+
+let my_gif = document.querySelector('img.my-gif');
+    my_gif.addEventListener('mouseover', function(){
+      
+         document.querySelector('img.my_gif').style.transition = "all 1s";
+         
+} )
+   my_gif.addEventListener('mouseout', function(){
+   
+       document.querySelector('img.my_gif').style.transform = "rotate(360deg)";
+        } )
