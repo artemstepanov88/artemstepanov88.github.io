@@ -102,7 +102,7 @@ z-index: 0;
 width: 100%;
 height: 100%;
 position: absolute;
-background: url("https://kartinkin.com/uploads/posts/2021-07/1627146361_19-kartinkin-com-p-sinii-kirpichnii-fon-krasivo-21.jpg") center no-repeat;
+background: url("https://kartinkin.com/uploads/posts/2021-07/1627146361_19-kartinkin-com-p-sinii-kirpichnii-fon-krasivo-21.jpg");
 z-index: 0;
 top: 100%;
 left: 0;
@@ -113,7 +113,7 @@ position: absolute;
 top: 14%;
 left: 24%;
 z-index: 3;
-text-color:red;
+font-color:red;
 }
 .header::after {
     z-index: 2;
