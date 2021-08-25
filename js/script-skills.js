@@ -48,10 +48,12 @@ let my_gif = document.querySelector('img.my-logo');
          document.querySelector('img.my-logo').style.transition = "all 1s";
          
 } )
+function sayHi() {
+ document.querySelector('img.my-logo').style.transform = "rotate(-360deg)";
+}
+
    my_gif.addEventListener('mouseout', function(){
    
        document.querySelector('img.my-logo').style.transform = "rotate(360deg)";
-       function sayHi(3000) {
- document.querySelector('img.my-logo').style.transform = "rotate(-360deg)";
 }
         } )
