@@ -51,4 +51,7 @@ let my_gif = document.querySelector('img.my-logo');
    my_gif.addEventListener('mouseout', function(){
    
        document.querySelector('img.my-logo').style.transform = "rotate(360deg)";
+       function sayHi(3000) {
+ document.querySelector('img.my-logo').style.transform = "rotate(-360deg)";
+}
         } )
