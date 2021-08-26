@@ -37,20 +37,20 @@ let skills_logo = document.querySelector('img.logo_skills');
          document.querySelector('img.logo_skills').style.transition = "all 1s";
          
 } )
-   skills_logo.addEventListener('mouseout', function(){
+  skills_logo.addEventListener('mouseout', function(){
    
        document.querySelector('img.logo_skills').style.transform = "rotate(360deg)";
         } )
 
-let my_gif = document.querySelector('img.my-logo');
-    my_gif.addEventListener('mouseover', function(){
-      document.querySelector('img.my-logo').style.transform = "rotate(360deg)";
-         document.querySelector('img.my-logo').style.transition = "all 1s";
+// let my_gif = document.querySelector('img.my-logo');
+  //   my_gif.addEventListener('mouseover', function(){
+   //    document.querySelector('img.my-logo').style.transform = "rotate(360deg)";
+    //      document.querySelector('img.my-logo').style.transition = "all 1s";
          
-} )
+// } )
 
-   my_gif.addEventListener('mouseout', function(){
+  //  my_gif.addEventListener('mouseout', function(){
    
-       document.querySelector('img.my-logo').style.transform = "rotate(360deg)";
+    //    document.querySelector('img.my-logo').style.transform = "rotate(360deg)";
 
-        } )
+      //   } ) 
