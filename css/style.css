@@ -164,7 +164,7 @@ z-index: 3;
 opacity:0.8;
 width: 4%;
 border-radius:25%;
-transition:all 2s ease-out;
+transition: transform .7s ease-in-out;
 }
 .my-logo:hover{
 position: absolute;
@@ -174,7 +174,7 @@ z-index: 3;
 opacity:0.8;
 width: 4%;
 border-radius:25%;
-transform: rotate(360deg)
+transform: rotate(360deg);
 
 }
 .logo{
