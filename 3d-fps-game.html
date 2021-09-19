@@ -117,7 +117,7 @@ z-index: 3;
 
         </div>
 
-        <script>
+        <script type = "module">
 
 var sphereShape, sphereBody, world, physicsMaterial, walls=[], balls=[], ballMeshes=[], boxes=[], boxMeshes=[];
 
@@ -246,17 +246,9 @@ function initCannon(){
     // We must add the contact materials to the world
     world.addContactMaterial(physicsContactMaterial);
 //    Background Test !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-const loader = new GLTFLoader();
 
-loader.load( 'img/yourMesh.gltf', function ( gltf ) {
 
-	scene.add( gltf.scene );
 
-}, undefined, function ( error ) {
-
-	console.error( error );
-
-} );
 //            Background Test !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
   // Create a sphere
