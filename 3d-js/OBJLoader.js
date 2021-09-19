@@ -1,18 +1,3 @@
-import {
-	BufferGeometry,
-	FileLoader,
-	Float32BufferAttribute,
-	Group,
-	LineBasicMaterial,
-	LineSegments,
-	Loader,
-	Material,
-	Mesh,
-	MeshPhongMaterial,
-	Points,
-	PointsMaterial,
-	Vector3
-} from "../../../build/three.module.js";
 
 var OBJLoader = ( function () {
 
