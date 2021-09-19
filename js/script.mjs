@@ -37,27 +37,19 @@ import {GLTFLoader} from 'https://threejsfundamentals.org/threejs/resources/thre
   
 // 3d model test !!!!!!!!!!!!!!
   
-  const loade = new GLTFLoader();
+const loade = new OBJLoader();
 
-
-
-// Load a glTF resource
+// load a resource
 loade.load(
 	// resource URL
-	'img/yourMesh.gltf',
-	// called when the resource is loaded
-	function ( gltf ) {
+	'img/yourMesh.obj',
+	// called when resource is loaded
+	function ( object ) {
 
-		scene.add( gltf.scene );
-
-		gltf.animations; // Array<THREE.AnimationClip>
-		gltf.scene; // THREE.Group
-		gltf.scenes; // Array<THREE.Group>
-		gltf.cameras; // Array<THREE.Camera>
-		gltf.asset; // Object
+		scene.add( object );
 
 	},
-	// called while loading is progressing
+	// called when loading is in progresses
 	function ( xhr ) {
 
 		console.log( ( xhr.loaded / xhr.total * 100 ) + '% loaded' );
@@ -70,11 +62,6 @@ loade.load(
 
 	}
 );
-  
-  
-  
-  
-
   
   
   //  3d model test !!!!!!!!!!!!!
