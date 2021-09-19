@@ -92,7 +92,7 @@ z-index: 3;
     <!-- Three.js r106        --><script src="3d-js/Three.js"></script>
 <script src="3d-js/cannon.js"></script>
         <script src="3d-js/PointerLockControls.js"></script>
-
+<script src="3d-js/OBJLoader.js"></script>
         <div id="blocker">
 
             <div id="instructions">
@@ -246,6 +246,17 @@ function initCannon(){
     // We must add the contact materials to the world
     world.addContactMaterial(physicsContactMaterial);
 //    Background Test !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  var loader = new THREE.OBJLoader();
+  loader.load( 'img/yourMesh.obj', function ( object ) {
+    console.log(object);
+    scene.add( object );
+  } );
+
+  renderer = new THREE.WebGLRenderer();
+  renderer.setSize( window.innerWidth, window.innerHeight );
+  container.appendChild( renderer.domElement );
+
+}
 
 //            Background Test !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
