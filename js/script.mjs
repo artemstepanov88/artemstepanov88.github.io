@@ -42,7 +42,7 @@ const loade = new OBJLoader();
 // load a resource
 loade.load(
 	// resource URL
-	'img/yourMesh.obj',
+	'img/FinalBaseMesh.obj',
 	// called when resource is loaded
 	function ( object ) {
 
