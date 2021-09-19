@@ -37,12 +37,12 @@ import {GLTFLoader} from 'https://threejsfundamentals.org/threejs/resources/thre
   
 // 3d model test !!!!!!!!!!!!!!
   
-  const loader = new GLTFLoader();
+  const loade = new GLTFLoader();
 
 
 
 // Load a glTF resource
-loader.load(
+loade.load(
 	// resource URL
 	'img/yourMesh.gltf',
 	// called when the resource is loaded
