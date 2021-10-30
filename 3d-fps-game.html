@@ -313,8 +313,7 @@ function init() {
     geometry.applyMatrix( new THREE.Matrix4().makeRotationX( - Math.PI / 2 ) );
   const textur = new THREE.ImageUtils.loadTexture( 'img/blue-forest 3.jpg' );
   const materia = new THREE.MeshBasicMaterial({map : textur});
-    textur.wrapS = textur.wrapT = THREE.RepeatWrapping;
-    textur.repeat.set(repeatX = 10, repeatY = 10);
+
     mesh = new THREE.Mesh( geometry, materia );
 
     mesh.castShadow = true;
