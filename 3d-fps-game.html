@@ -314,7 +314,7 @@ function init() {
     geometry = new THREE.PlaneGeometry( 50, 100, 50, 50 );
     geometry.applyMatrix( new THREE.Matrix4().makeRotationX( - Math.PI / 2 ) );
   const textur = new THREE.ImageUtils.loadTexture( 'img/blue-forest 3.jpg' );
-  const materia = new THREE.MeshPhongMaterial( {
+  const materia = new THREE.MeshToonMaterial( {
                     alphaTest: 0.9,
                     ambient: 0x0000ff,
                     color: 0xffffff,
