@@ -360,18 +360,22 @@ function init() {
         boxes.push(boxBody);
         boxMeshes.push(boxMesh);
     }
-//
+//  !!!!!!!! Back Ground !!!!!!!!
 
 
 
- //const texture = new THREE.ImageUtils.loadTexture( 'img/4.jpg' );
-  //const material = new THREE.MeshBasicMaterial({map : texture});
+		var geometry = new THREE.SphereGeometry(1000, 60, 40);
+		var ma = new THREE.MeshBasicMaterial();
+		ma.map = THREE.ImageUtils.loadTexture("images/4.jpg");
+		ma.side = THREE.BackSide;
+		var skydome = new THREE.Mesh(geometry, ma);
+
+		scene.add(skydome);
 
 
 
 
-
-//
+//    !!!!!!!! Back Ground !!!!!!!!
 
     // Add linked boxes
     var size = 2;
