@@ -257,22 +257,14 @@ function initCannon(){
 			var urls = [
 			    "img/1.jpg",
 			    "img/2.jpg",
-			    "img/3.jpg",
 			    "img/4.jpg",
-			    "img/5.jpg",
+			    "img/4.jpg",
+			    "img/6.jpg",
 			    "img/6.jpg",
 			];
 			var textureCube = THREE.ImageUtils.loadTextureCube(urls);
 			
-			//setup the cube shader
-			var shader = THREE.ShaderUtils.lib["cube"];
-			var uniforms = THREE.UniformsUtils.clone(shader.uniforms);
-			uniforms['tCube'].texture = textureCube;
-			var material = new THREE.ShaderMaterial({
-			        fragmentShader : shader.fragmentShader,
-			        vertexShader   : shader.vertexShader,
-			        uniforms       : uniforms
-			});
+		
 			
 			//create a skybox
 			var size = 10000;
