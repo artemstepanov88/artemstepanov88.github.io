@@ -366,7 +366,14 @@ function init() {
         let texture_dn = new THREE.ImageUtils.loadTexture( 'https://threejsfundamentals.org/threejs/resources/images/cubemaps/computer-history-museum/neg-y.jpg');
         let texture_rt = new THREE.ImageUtils.loadTexture( 'https://threejsfundamentals.org/threejs/resources/images/cubemaps/computer-history-museum/pos-z.jpg');
         let texture_lf = new THREE.ImageUtils.loadTexture( 'https://threejsfundamentals.org/threejs/resources/images/cubemaps/computer-history-museum/neg-z.jpg');
-
+  
+	const a = new THREE.MeshBasicMaterial({map : texture_ft});
+	const b = new THREE.MeshBasicMaterial({map : texture_bk});
+	const c = new THREE.MeshBasicMaterial({map : texture_up});
+	const d = new THREE.MeshBasicMaterial({map : texture_dn});
+	const f = new THREE.MeshBasicMaterial({map : texture_rt});
+	const g = new THREE.MeshBasicMaterial({map : texture_lf});
+   
           
         materialArray.push(new THREE.MeshBasicMaterial( { map: texture_ft }));
         materialArray.push(new THREE.MeshBasicMaterial( { map: texture_bk }));
@@ -375,10 +382,15 @@ function init() {
         materialArray.push(new THREE.MeshBasicMaterial( { map: texture_rt }));
         materialArray.push(new THREE.MeshBasicMaterial( { map: texture_lf }));
    
-        for (let i = 0; i < 6; i++)
-           materialArray[i].side = THREE.BackSide;
+        a.side = THREE.BackSide;
+	 b.side = THREE.BackSide;
+	 c.side = THREE.BackSide;
+	 d.side = THREE.BackSide;
+	 f.side = THREE.BackSide;
+	 g.side = THREE.BackSide;
+	
         let skyboxGeo = new THREE.BoxGeometry( 10000, 10000, 10000);
-        let skybox = new THREE.Mesh( skyboxGeo, materialArray );
+        let skybox = new THREE.Mesh( skyboxGeo,a,b,c,d,f,g);
         scene.add( skybox );  
         animate();
 
