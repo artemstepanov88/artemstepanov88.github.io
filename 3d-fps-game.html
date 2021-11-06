@@ -314,11 +314,11 @@ function init() {
     controls = new PointerLockControls( camera , sphereBody );
     scene.add( controls.getObject() );
 
-    // floor
+    // FLOOR !!!!!!!!!!!
     geometry = new THREE.PlaneGeometry( 50, 100, 50, 50 );
   geometry.applyMatrix( new THREE.Matrix4().makeRotationX( - Math.PI / 2 ) );
 	
-  const textur = new THREE.ImageUtils.loadTexture( 'img/button 1.png' );
+  const textur = new THREE.ImageUtils.loadTexture( 'img/blue-forest 3.jpg' );
   const materia = new THREE.MeshBasicMaterial({map : textur});
 		
 			textur.wrapS = THREE.RepeatWrapping;
