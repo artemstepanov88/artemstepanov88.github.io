@@ -252,33 +252,8 @@ function initCannon(){
     // We must add the contact materials to the world
     world.addContactMaterial(physicsContactMaterial);
 //    Background Test !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-		//add skymap
-			//load sky images
-			var urls = [
-			    "img/1.jpg",
-			    "img/2.jpg",
-			    "img/4.jpg",
-			    "img/4.jpg",
-			    "img/6.jpg",
-			    "img/6.jpg",
-			];
-			var textureCube = THREE.ImageUtils.loadTextureCube(urls);
+
 			
-		
-			
-			//create a skybox
-			var size = 10000;
-			skyboxMesh = new THREE.Mesh( 
-			    new THREE.CubeGeometry(size,size,size),material);
-			//IMPORTANT!! draw on the inside instead of outside
-			skyboxMesh.flipSided = true; // you must have this or you won't see anything
-			scene.add(skyboxMesh);
-			
-			
-			//add sunlight
-			var light = new THREE.SpotLight();
-			light.position.set(0,500,0);
-			scene.add(light);
 //            Background Test !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
   // Create a sphere
@@ -343,9 +318,13 @@ function init() {
     geometry = new THREE.PlaneGeometry( 50, 100, 50, 50 );
   geometry.applyMatrix( new THREE.Matrix4().makeRotationX( - Math.PI / 2 ) );
 	
-  const textur = new THREE.ImageUtils.loadTexture( 'img/blue-forest 3.jpg' );
+  const textur = new THREE.ImageUtils.loadTexture( 'img/my-logo1.gif' );
   const materia = new THREE.MeshBasicMaterial({map : textur});
-	
+		
+			textur.wrapS = THREE.RepeatWrapping;
+			textur.wrapT = THREE.RepeatWrapping;
+			textur.repeat.x = 256;
+			textur.repeat.y = 256;
     mesh = new THREE.Mesh( geometry, materia );
 
     mesh.castShadow = true;
