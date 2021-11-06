@@ -365,18 +365,14 @@ function init() {
 			urlPrefix + "blue-forest 3.jpg", urlPrefix + "blue-forest 3.jpg",
 			urlPrefix + "blue-forest 3.jpg", urlPrefix + "blue-forest 3.jpg" ];
 	var textureCube	= THREE.ImageUtils.loadTextureCube( urls );
+
+
+        const ma = new THREE.MeshBasicMaterial({map : textureCube});
 	
-	// init the cube shadder
-	var uniforms	= THREE.UniformsUtils.clone( shader.uniforms );
-	uniforms['tCube'].texture= textureCube;
-	var material = new THREE.MeshShaderMaterial({
-		fragmentShader	: shader.fragmentShader,
-		vertexShader	: shader.vertexShader,
-		uniforms	: uniforms
 	});
 
 	// build the skybox Mesh
-	skyboxMesh	= new THREE.Mesh( new THREE.CubeGeometry( 100000, 100000, 100000, 1, 1, 1, null, true ), material );
+	skyboxMesh	= new THREE.Mesh( new THREE.CubeGeometry( 100000, 100000, 100000, 1, 1, 1, null, true ), ma );
 	// add it to the scene
 	scene.addObject( skyboxMesh );
 	
