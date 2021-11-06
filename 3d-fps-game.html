@@ -359,34 +359,28 @@ function init() {
     }
 //  !!!!!!!! Back Ground !!!!!!!!
 
-  let materialArray = [];
-        let texture_ft = new THREE.ImageUtils.loadTexture( 'img/blue-forest 3.jpg');
-        let texture_bk = new THREE.ImageUtils.loadTexture( 'img/blue-forest 3.jpg');
-        let texture_up = new THREE.ImageUtils.loadTexture( 'img/blue-forest 3.jpg');
-        let texture_dn = new THREE.ImageUtils.loadTexture( 'img/blue-forest 3.jpg');
-        let texture_rt = new THREE.ImageUtils.loadTexture( 'img/blue-forest 3.jpg');
-        let texture_lf = new THREE.ImageUtils.loadTexture( 'img/blue-forest 3.jpg');
-  
-	const a = new THREE.MeshBasicMaterial({map : texture_ft});
-	const b = new THREE.MeshBasicMaterial({map : texture_bk});
-	const c = new THREE.MeshBasicMaterial({map : texture_up});
-	const d = new THREE.MeshBasicMaterial({map : texture_dn});
-	const f = new THREE.MeshBasicMaterial({map : texture_rt});
-	const g = new THREE.MeshBasicMaterial({map : texture_lf});
-   
-   
-   
-        a.side = THREE.BackSide;
-	 b.side = THREE.BackSide;
-	 c.side = THREE.BackSide;
-	 d.side = THREE.BackSide;
-	 f.side = THREE.BackSide;
-	 g.side = THREE.BackSide;
-	
-        let skyboxGeo = new THREE.BoxGeometry( 10000, 10000, 10000);
-        let skybox = new THREE.Mesh( skyboxGeo,a,b,c,d,f,g);
-        scene.add( skybox );  
 
+	var urlPrefix	= "img/";
+	var urls = [ urlPrefix + "blue-forest 3.jpg", urlPrefix + "blue-forest 3.jpg",
+			urlPrefix + "blue-forest 3.jpg", urlPrefix + "blue-forest 3.jpg",
+			urlPrefix + "blue-forest 3.jpg", urlPrefix + "blue-forest 3.jpg" ];
+	var textureCube	= THREE.ImageUtils.loadTextureCube( urls );
+	
+	// init the cube shadder
+	var shader	= THREE.ShaderUtils.lib["cube"];
+	var uniforms	= THREE.UniformsUtils.clone( shader.uniforms );
+	uniforms['tCube'].texture= textureCube;
+	var material = new THREE.MeshShaderMaterial({
+		fragmentShader	: shader.fragmentShader,
+		vertexShader	: shader.vertexShader,
+		uniforms	: uniforms
+	});
+
+	// build the skybox Mesh
+	skyboxMesh	= new THREE.Mesh( new THREE.CubeGeometry( 100000, 100000, 100000, 1, 1, 1, null, true ), material );
+	// add it to the scene
+	scene.addObject( skyboxMesh );
+	
 //    !!!!!!!! Back Ground !!!!!!!!
 
     // Add linked boxes
