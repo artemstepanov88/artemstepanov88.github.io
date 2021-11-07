@@ -315,7 +315,8 @@ function init() {
 	var skyMaterial = new THREE.MeshFaceMaterial( materialArray );
 	var skyBox = new THREE.Mesh( skyGeometry, skyMaterial );
 	scene.add( skyBox );
-	
+	        renderer.render(scene,camera);
+        requestAnimationFrame(animate);
 	////////////
 	
 	
