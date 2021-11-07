@@ -381,7 +381,7 @@ function init() {
         var boxbody = new CANNON.Body({ mass: mass, color: 0xFF0000 });
         boxbody.addShape(boxShape);
          const textu = new THREE.ImageUtils.loadTexture( 'img/4 min.png' );
-         const materi = new THREE.MeshBasicMaterial({map : textu});
+         const materi = new THREE.MeshPhongMaterial({map : textu});
         var boxMesh = new THREE.Mesh(boxGeometry, materi);
         
  
