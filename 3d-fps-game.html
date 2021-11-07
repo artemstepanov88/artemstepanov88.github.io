@@ -313,16 +313,7 @@ function init() {
     geometry = new THREE.PlaneGeometry( 50, 100, 50, 50 );
     geometry.applyMatrix( new THREE.Matrix4().makeRotationX( - Math.PI / 2 ) );
   const textur = new THREE.ImageUtils.loadTexture( 'img/blue-forest 3.jpg' );
-  const materia = new THREE.MeshPhongMaterial( {
-                    alphaTest: 0.5,
-                    ambient: 0x000000,
-                    color: 0xffffff,
-                    specular: 0x333333,
-                    emissive: 0x222222,
-                    //shininess: 5,
-                    map: textur,
-                    side: THREE.DoubleSide
-                } );
+  const materia = new THREE.MeshPhongMaterial({map: textur});
 
     mesh = new THREE.Mesh( geometry, materia );
 
