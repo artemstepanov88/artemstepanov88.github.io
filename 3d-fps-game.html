@@ -353,6 +353,9 @@ function init() {
 
 	
 	//    Background Test !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+		var axes = new THREE.AxisHelper(100);
+	scene.add( axes );
+	
 var materialArray = [];
 materialArray.push(new THREE.MeshBasicMaterial( { map: THREE.ImageUtils.loadTexture( 'img/4 min.png' ) }));
 materialArray.push(new THREE.MeshBasicMaterial( { map: THREE.ImageUtils.loadTexture( 'img/4 min.png' ) }));
