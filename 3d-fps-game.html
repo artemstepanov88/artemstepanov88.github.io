@@ -368,7 +368,13 @@ function init() {
 	var skyMaterial = new THREE.MeshFaceMaterial( materialArray );
 	var skyBox = new THREE.Mesh( skyGeometry, skyMaterial );
 	scene.add( skyBox );
-	world.add( skyBox);
+    var skyBoxShape = new CANNON.Plane();
+    var skyBoxBody = new CANNON.Body({ mass: 5 });
+
+   skyBoxBody.addShape(skyBoxShape);
+   skyBoxBody.quaternion.setFromAxisAngle(new CANNON.Vec3(1,0,0),-Math.PI/2);
+    world.add(skyBoxBody);
+	
 //            Background Test !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 
