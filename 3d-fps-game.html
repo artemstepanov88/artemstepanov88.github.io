@@ -369,7 +369,7 @@ function init() {
 	var skyBox = new THREE.Mesh( skyGeometry, skyMaterial );
 	scene.add( skyBox );
     var skyBoxShape = new CANNON.Plane();
-    var skyBoxBody = new CANNON.Body({ mass: 5, color: 0x00FF00, position: new CANNON.Vec3(100,0,0) });
+    var skyBoxBody = new CANNON.Body({ mass: 10, color: 0x00FF00, position: new CANNON.Vec3(10,10,10) });
   
 	skyBoxBody.addShape(skyBoxShape);
     world.addBody(skyBoxBody);
