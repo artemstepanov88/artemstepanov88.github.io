@@ -368,11 +368,9 @@ function init() {
 	var skyMaterial = new THREE.MeshFaceMaterial( materialArray );
 	var skyBox = new THREE.Mesh( skyGeometry, skyMaterial );
 	scene.add( skyBox );
-    var skyBoxShape = new CANNON.Plane(10,10);
-    var skyBoxBody = new CANNON.Body({ mass: 0, color: 0xff0000});
-  
-	skyBoxBody.addShape(skyBoxShape);
-    world.addBody(skyBoxBody);
+
+ 
+
 	
 //            Background Test !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
